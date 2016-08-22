@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/layout.css" media="screen" title="CSS title" charset="utf-8">
+  </head>
+
+  <script type="text/javascript" src="scripts/showPic.js"></script>
+
+  <body>
+    <h1>SomePicture</h1>
+    <ul id="imagegallery">
+      <!-- <li>
+        <a href="http://www.baidu.com" onclick="return ture;">Click me</a>
+      </li> -->
+      <li>
+        <a href="images/night.jpg" onclick="showPic(this); return false;" title="A beautiful night">Night</a>
+      </li>
+      <li>
+        <a href="images/person.jpg" onclick="showPic(this); return false;" title="Some lazy person">Person</a>
+      </li>
+      <li>
+        <a href="images/bland.png" onclick="showPic(this); return false;" title="A cool boy">Bland</a>
+      </li>
+      <li>
+        <a href="images/snow.png" onclick="showPic(this); return false;" title="The master of GreatWall">Snow</a>
+      </li>
+      <img id="placeholder" src="images/night.jpg" alt="my image gallery" />
+      <p id="description">Choose an image.</p>
+    </ul>
+
+    <!-- <script>
+        // function showPic(whichpic){
+        //     // whichpic.getAttribute("href");
+        //     var source = whichpic.getAttribute("href");
+        //     var placeholder = document.getElementById("placeholder");
+        //     placeholder.setAttribute("src",source);
+        // }
+        var items = document.getElementsByTagName("a");
+        for (var i = 0; i < items.length; i++) {
+          showPic(items[i]);
+        }
+
+    </script> -->
+
+  </body>
+</html>
